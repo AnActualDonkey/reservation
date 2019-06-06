@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HotRestaurant - Make a Reservation</title>
+    <!-- jQuery -->
+    <script src="jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='jumbotron text-center'>
+                    <h1>HotRestaurant</h1>
+                    <p>Grab your table!</p>
+                    <hr class='my-4'>
+                    <p>View available tables and make a reservation!</p>
+                    <button class='button btn-primary btn-lg' id='view_btn'>View Tables</button>
+                    <button class='button btn-primary btn-lg' id='home_btn'>Home</button>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <div class='card'>
+                    <div class='card-header'>
+                        Make a Reservation
+                    </div>
+                    <div class='card-body'>
+                        <form>
+                            <div class='form-group'>
+                                <label for='name_input'>Name</label>
+                                <input type='name' class='form-control' id='name_input'>
+                            </div>
+                            <div class='form-group'>
+                                <label for='phone_input'>Phone Number</label>
+                                <input type='name' class='form-control' id='phone_input'>
+                            </div>
+                            <div class='form-group'>
+                                <label for='email_input'>Email</label>
+                                <input type='name' class='form-control' id='email_input'>
+                            </div>
+                            <div class='form-group'>
+                                <label for='id_input'>Uniqe ID</label>
+                                <input type='name' class='form-control' id='id_input'>
+                                <small id='id_help' class='form-text text-muted'>Be Creative!</small>
+                            </div>
+                            <input type='submit' class='button btn-primary btn-lg' value='Submit'>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
