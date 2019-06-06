@@ -20,21 +20,27 @@ var customers = [
         email: " ",
         ID: " "
     }
-]
+];
 
 //send user to the ajax page
 
-app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "one.html"));
+app.get("/tables", function (req, res) {
+    console.log(path.join(__dirname, "tables.html"));
+    res.sendFile(path.join(__dirname, "tables.html"));
 });
 
-app.get("/two", function (req, res) {
-    res.sendFile(path.join(__dirname, "two.html"));
+// app.get("/test", function (req, res) {
+//     res.send("test");
+// });
+
+app.get("/reserve", function (req, res) {
+    console.log(path.join(__dirname, "reserve.html"));
+    res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
-//display all reservations
+// display all reservations
 
-app.get("/api/customers/:custommer", function (req, res) {
+app.get("/api/customers/:customer", function (req, res) {
     var chosen = req.params.customer;
 
     console.log(chosen);
@@ -44,10 +50,10 @@ app.get("/api/customers/:custommer", function (req, res) {
             return res.json(customers[i]);
         }
     }
-    return res.json(false);
+    res.json(false);
 });
 
-//create new reservations
+// create new reservations
 
 app.post("/api/customers", function (req, res) {
     var newcustomer = req.body;
